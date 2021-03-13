@@ -1,3 +1,5 @@
+![Travel Guid](images/travel.jpg)
+
 # Travel Guide
 What is the most popular destinations for Canadians? Pick your dates and preferences and have fun!
 
@@ -33,6 +35,5 @@ Based on this information, we will predict the most suitable location destinatio
 ## Visualizations:
 tbd
 ## Live webpage
-tbd
 --
 ### Copyright
