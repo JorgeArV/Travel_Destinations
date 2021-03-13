@@ -1,13 +1,13 @@
-![Travel Guid](images/travel.jpg)
+![Travel Guid](images/travel1.jpg)
 
 # Travel Guide
 What is the most popular destinations for Canadians? Pick your dates and preferences and have fun!
 
 Our goal is to provide suggestions for travel destinations based on criteria that the user will select. Users will be able to choose the following: 
-<li>Continent</li>
+<li>Country</li>
 <li>Weather</li>
 <li>Price Range</li>
-<li>water temperature</li>
+<li>Water temperature</li>
 <li>Type of accommodations</li>
 <li>etc..</li>
 
