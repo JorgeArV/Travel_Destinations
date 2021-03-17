@@ -16,7 +16,7 @@ var svg = d3.select("#my_dataviz")
 d3.csv("Temperature_Dataset1.csv", function(data) {
 
     // List of groups (here I have one group per column)
-    var allGroup = ["valueA", "valueB", "valueC"]
+    var allGroup = ["Temperature", "humidity", "precip"]
 
     // add the options to the button
     d3.select("#selectButton")
@@ -53,10 +53,10 @@ d3.csv("Temperature_Dataset1.csv", function(data) {
       .append("path")
         .datum(data)
         .attr("d", d3.line()
-          .x(function(d) { return x(+d.time) })
-          .y(function(d) { return y(+d.valueA) })
+          .x(function(d) { return x(+d.Date) })
+          .y(function(d) { return y(+d.Temperature) })
         )
-        .attr("stroke", function(d){ return myColor("valueA") })
+        .attr("stroke", function(d){ return myColor("Temperature") })
         .style("stroke-width", 4)
         .style("fill", "none")
 
@@ -64,7 +64,7 @@ d3.csv("Temperature_Dataset1.csv", function(data) {
     function update(selectedGroup) {
 
       // Create new data with the selection?
-      var dataFilter = data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
+      var dataFilter = data.map(function(d){return {Date: d.Date, value:d[selectedGroup]} })
 
       // Give these new data to update line
       line
@@ -72,7 +72,7 @@ d3.csv("Temperature_Dataset1.csv", function(data) {
           .transition()
           .duration(1000)
           .attr("d", d3.line()
-            .x(function(d) { return x(+d.time) })
+            .x(function(d) { return x(+d.Date) })
             .y(function(d) { return y(+d.value) })
           )
           .attr("stroke", function(d){ return myColor(selectedGroup) })

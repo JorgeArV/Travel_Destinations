@@ -69,6 +69,26 @@
       </div>
     </div>
   </div>
+  <div class="row">
+		<div class="col-md-6">
+			<div id="plot" style="fill: red;"> </div>
+		</div>
+		<div class="col-md-6">
+			<div id="plot1"></div>
+		</div>
+	</div>
+	<div class="row py-4">
+		<div class="col-md-7 offset-md-3">
+			<div class="card">
+				<div class="card-body">
+					<h5 style="text-align: center;">5. Estimated Mortgage Rate over Time</h5>
+				</div>
+				<div class="card-body">
+					<canvas id="my_dataviz"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
   <!-- Initialize a select button -->
   <select id="selectButton"></select>
 
@@ -80,7 +100,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
   <script src="static/js/data.js"></script>
-  <script src="static/js/app.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
