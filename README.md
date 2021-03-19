@@ -1,4 +1,4 @@
-![Travel Guid](images/travel1.jpg)
+![Travel Guid](Travel_App/Images/travel1.jpg)
 
 # Travel Guide
 What is the most popular destinations for Canadians? Pick your dates and preferences and have fun!
