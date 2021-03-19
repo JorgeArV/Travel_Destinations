@@ -1,90 +1,194 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="en-US">	<![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="en-US"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="en-US">
+<!--<![endif]-->
+	<head>
+		<!-- meta -->
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>Travel Guide</title>
 
-<head>
-  <meta charset="utf-8">
-  <title>Travel Guide</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <script src="https://d3js.org/d3.v4.js"></script>
-  <link rel="stylesheet" href="static/css/style.css">
+	<link rel="stylesheet" href="../static/css/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/css/assets/css/ionicons.min.css">
+	<link rel="stylesheet" href="../static/css/assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="../static/css/assets/css/owl.theme.css">
+	<link rel="stylesheet" href="../static/css/assets/css//flexslider.css" type="text/css">
+    <link rel="stylesheet" href="../static/css/assets/css/main.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+			<!--[if lt IE 9]>
+				<script src="assets/js/html5shiv.js"></script>
+				<script src="assets/js/respond.js"></script>
+			<![endif]-->
+
+			<!--[if IE 8]>
+		    	<script src="assets/js/selectivizr.js"></script>
+		    <![endif]-->
 </head>
-
 <body>
-  <body class="text-white" style="background-color:black;">
-        <div class="jumbotron text-center" style="background-image: url(/images/travel.jpeg); background-size: 100%; height: 100%;">
-            <h1 class="display-4">Travel Guide</h1>
-            <p class="lead">Explore the Travel Destinations in US and Canada</p>
-        </div>
-        <body>
-    <div class="container">
-      <div class="row margin-top-50">
-        <div class="col-md-14">
-          <aside class="filters">
-            <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
-              <div class="panel-body">
-                <form>
-                  <div class="form-group">
-                    <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
-                        <label for="date">Search by Weather</label>
-                        <input class="form-control" id="weather" type="text" placeholder="20 to 30">
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="City">Search by Country</label>
-                        <input class="form-control" id="country" type="text" placeholder="Canada">
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="State">Search by City</label>
-                        <input class="form-control" id="state" type="text" placeholder="Quebec">
-                      </li>
-                    </ul>
-                  </div>
-                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-                </form>
-              </div>
-            </div>
-          </aside>
-        </div>
-        <!-- <div class="col-md-10">
-          <div id="table-area" class="">
-            <table id="ufo-table" class="table table-striped">
-              <thead>
-                <tr>
-                  <th class="table-head">Date</th>
-                  <th class="table-head">City</th>
-                  <th class="table-head">State</th>
-                  <th class="table-head">Country</th>
-                  <th class="table-head">Shape</th>
-                  <th class="table-head">Duration</th>
-                  <th class="table-head">Comments</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-          </div>
-        </div> -->
-      </div>
-    </div>
-  </div>
-	<div class="row py-4">
-		<div class="col-md-7 offset-md-3">
-			<div class="card">
-				<div class="card-body">
-					<h5 style="text-align: center;">5. Estimated Mortgage Rate over Time</h5>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../templates/index.html" title="HOME"><i class="ion-paper-airplane"></i> travel <span>guide</span></a>
+			</div> <!-- /.navbar-header -->
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="../templates/index.html">Home</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="services.html">services</a></li>
+					<li><a href="contact.html">contact</a></li>
+				</ul> <!-- /.nav -->
+		    </div><!-- /.navbar-collapse -->
+	  	</div><!-- /.container -->
+	</nav>
+
+<!-- Home -->
+		<div id="header">
+		    <div class="flexslider">
+		        <ul class="slides">
+		            <li class="slider-item" style="background-image: url('../static/css/assets/images/item-1.png')">
+		                <div class="intro container">
+		                    <div class="inner-intro">
+		                        <h1 class="header-title">
+		                            <span>traveling</span> always "good idea"
+		                        </h1>
+		                        <p class="header-sub-title">
+		                            it leaves you speecless, then turns your into a storyteller.
+		                        </p>
+		                    </div>
+		                </div>
+		            </li> <!-- /.slider-item -->
+		            <li class="slider-item" style="background-image: url('../static/css/assets/images/item-2.png')">
+		                <div class="intro">
+		                    <div class="inner-intro">
+		                        <h1 class="header-title">
+		                            to <span>travel</span> is to <span>live</span>
+		                        </h1>
+		                        <p class="header-sub-title">
+		                            it leaves you speecless, then turns your into a storyteller.
+		                        </p>
+		                    </div>
+		                </div>
+		            </li> <!-- /.slider-item -->
+		        </ul> <!-- /.slides -->
+		    </div> <!-- /.flexslider -->
+		</div> <!-- /#header -->
+		<body class="text-white" style="background-color: whitesmoke;">
+			<div class="jumbotron text-center" style="background-image: url(/images/travel.jpeg); background-size: 100%; height: 100%;">
+				<h1 class="display-4">Travel Guide</h1>
+				<p class="lead">Explore the Travel Destinations in US and Canada</p>
+			</div>
+<!-- Find a Tour -->
+	<section class="tour section-wrapper container">
+		<h1 class="section-title">
+			Find a Tour
+		</h1>
+		<h3 class="section-subtitle">
+			Where would you like to go?
+		</h3>
+		<div class="col-md-3 col-sm-6">
+			<div class="input-group">
+				<input type="text" class="form-control border-radius border-right" placeholder="Min Temperature"/>
+				<span class="input-group-addon border-radius custom-addon">
+					<i class="weather"></i>
+				</span>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6">
+			<div class="input-group">
+				<input type="text" class="form-control border-radius border-right" placeholder="Max Temperature"/>
+				<span class="input-group-addon border-radius custom-addon">
+					<i class="weather"></i>
+				</span>
+			</div>
+		</div>
+            <div class="col-md-3 col-sm-6">
+				<div class="input-group">
+					<input type="text" class="form-control border-radius border-right" placeholder="Departure Date"/>
+					<span class="input-group-addon border-radius custom-addon">
+						<i class="ion-ios-calendar"></i>
+					</span>
 				</div>
-				<div class="card-body">
-					<canvas id="my_dataviz"></canvas>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="input-group">
+					<input type="text" class="form-control border-radius border-right" placeholder="Arrival Date"/>
+					<span class="input-group-addon border-radius custom-addon">
+						<i class="ion-ios-calendar"></i>
+					</span>
+				</div>
+			</div>
+			<div class="col-md-2 col-sm-4">
+				<div class="btn btn-default border-radius custom-button">
+					Search
 				</div>
 			</div>
 		</div>
+	</section> <!-- /.tour -->
+	<!-- Filter for Min Price, Max Price and Reviews for Airbnb -->
+	<section class="tour section-wrapper container">
+		<h1 class="section-title">
+			Best Places to Stay
+		</h1>
+		<h3 class="section-subtitle">
+			Affordable Airbnb Options for you
+		</h3>
+		<div class="col-md-3 col-sm-6">
+		<div class="input-group">
+			<input type="text" class="form-control border-radius border-right" placeholder="Minimum Price"/>
+			<span class="input-group-addon border-radius custom-addon">
+				<i class="Price"></i>
+			</span>
+		</div>
 	</div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <script src="static/js/data.js"></script>
-  <script src="app.js"></script>
-  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-</body>
+	<div class="col-md-3 col-sm-6">
+		<div class="input-group">
+			<input type="text" class="form-control border-radius border-right" placeholder="Maximum Price"/>
+			<span class="input-group-addon border-radius custom-addon">
+				<i class="Price"></i>
+			</span>
+		</div>
+	</div>
+	<div class="col-md-3 col-sm-6">
+		<div class="input-group">
+			<input type="text" class="form-control border-radius border-right" placeholder="Reviews"/>
+			<span class="input-group-addon border-radius custom-addon">
+				<i class="Reviews"></i>
+			</span>
+		</div>
+	</div>
+	<div class="col-md-2 col-sm-4">
+		<div class="btn btn-default border-radius custom-button">
+			Search
+		</div>
+	</div>
+</div>
+</section> <!-- /.tour -->
 
+
+	<script src="assets/js/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/jquery.flexslider.js"></script>
+	<script src="assets/js/script.js"></script>
+
+
+
+
+
+
+</body>
 </html>
