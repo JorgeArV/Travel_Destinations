@@ -6,7 +6,6 @@ flask_sqlalchemy>=2.0.0
 Flask-PyMongo==2.3.0
 decorator==4.4.2
 beautifulsoup4 == 4.9.3
-bs4== 2.0.1
 psycopg2==2.8.6
 psycopg2-binary==2.8.6
 pymongo==3.11.2
