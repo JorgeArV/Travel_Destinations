@@ -14,6 +14,7 @@ from flask import (
     request,
     redirect)
 
+#from MlTest_ulisses import city_predictor
 #################################################
 # Flask Setup
 #################################################
@@ -43,14 +44,14 @@ db = SQLAlchemy(app)
 @app.route("/")
 def home():
     return render_template("index.html")
+    #get variables from index
+
+    #user_var1, user_var2
 
 
-@app.route("/test")
-def home():
-    
-    
-    return render_template("index.html")
+    #use model predict
+    # output = city_predictor(user_var1, user_var2)
 
-
+    return jsonify(output)
 if __name__ == "__main__":
     app.run()
