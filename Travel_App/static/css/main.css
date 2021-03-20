@@ -535,3 +535,17 @@ footer a:hover, footer a:focus{
 	background-color: #68a0d2!important;
 	border: .05rem solid #68a0d2!important;
   }
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+.fixed-background {
+	overflow: hidden; /*-- Correction for iOS --*/
+  }
+  
+  .fixed {
+	background-image: url('/static/images/summer.jpeg');
+	position: fixed;
+  }
+  
+  .fixed-background {
+	padding: 5rem 0;
