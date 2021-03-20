@@ -1,0 +1,1 @@
+web: gunicorn Travel_App:app:app
