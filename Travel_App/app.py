@@ -46,12 +46,6 @@ def home():
 
 
 
-@app.route("/api/v2/top_reviews")
-
-
-
-
-
 
 if __name__ == "__main__":
     app.run()
