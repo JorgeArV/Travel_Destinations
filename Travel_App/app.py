@@ -45,6 +45,11 @@ def home():
     return render_template("index - Copy.html")
 
 
+@app.route("/api/weather_test")
+
+def minimum_weather = #minimum weather
+
+
 
 
 if __name__ == "__main__":
