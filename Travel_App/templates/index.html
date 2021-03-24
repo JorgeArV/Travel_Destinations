@@ -80,10 +80,14 @@
 		</h2>
 		<p class="section-subtitle">
 			Where would you like to go?
+
+		
 		</p>
+
+		<form method="POST">
 		<div class="col-md-3 col-sm-6">
 			<div class="input-group">
-				<input type="text" class="form-control border-radius border-right" placeholder="Maximum Temperature"/>
+				<input type="text" class="form-control border-radius border-right" placeholder="temp_max"  input name="temp_max">/>
 				<span class="input-group-addon border-radius custom-addon">
 					<i class="weather"></i>
 				</span>
@@ -91,7 +95,7 @@
 		</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="input-group">
-					<input type="text" class="form-control border-radius border-right" placeholder="Minimum Weather"/>
+					<input type="text" class="form-control border-radius border-right" placeholder="temp_min" name="temp_min"/>
 					<span class="input-group-addon border-radius custom-addon">
 						<i class="weather"></i>
 					</span>
@@ -99,19 +103,21 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="input-group">
-					<input type="text" class="form-control border-radius border-right" placeholder="Humidity"/>
+					<input type="text" class="form-control border-radius border-right" placeholder="humidity" name="humidity"/>
 					<span class="input-group-addon border-radius custom-addon">
 						<i class="Humidity"></i>
 					</span>
 				</div>
 			</div>
+			
 			<div class="col-md-3 col-sm-6">
 				<div class="btn btn-default border-radius custom-button">
 					<button id="search_btn">Find the city</button>
-					<p id="demo"></p>
-					where's input
+					<p id="demo">{{result}}</p>
+					
 				</div>
 			</div>
+		</form>	
 		</div>
 	</section> <!-- /.tour -->
 

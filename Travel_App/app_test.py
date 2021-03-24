@@ -44,9 +44,25 @@ db = SQLAlchemy(app)
 @app.route("/")
 def home():
     return render_template("index.html")
+   
+def home():
+    return render_template("index.html")
+
+
+
     #get variables from index
 
-    #user_var1, user_var2
+    if request.method == "POST":
+       var_month = request.form.get("var_month")
+       var_day_start = request.form.get("var_day_start")
+       var_day_end = request.form.get("var_day_end")
+       temp_max = request.form.get("temp_max")
+       temp_min = request.form.get("temp_min")
+       humidity = request.form.get("humidity")
+       return "Variables are " +  var_month + " and " +var_day_start + " and " +var_day_end + " and " +temp_max + " and " +temp_min + humidity
+    return render_template("index.html")
+
+      #user_var1, user_var2
 
 
     #use model predict
