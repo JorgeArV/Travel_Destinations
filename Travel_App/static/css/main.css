@@ -10,7 +10,7 @@ body
 	overflow-x: hidden;
 	color: #fff;
 }
-/*Owl Carousel*/
+/* Owl Carousel
 .owl-prev, .owl-next
 {
 	position: absolute;
@@ -31,13 +31,13 @@ body
     content: "\f3d2";
     font-family: 'ionicons';
  	/*color: #fff;*/
-}
+/* }
 .owl-next:before
 {
     content: "\f3d3";
     font-family: "ionicons";
     /*color: #fff;*/
-}
+
 .section-title{
 	color: #313131;
 	text-align: center;
@@ -45,15 +45,18 @@ body
 .section-subtitle{
 	color: #583b54;
 	text-align: center;
-	margin-bottom: 50px;
+	margin-top: 40px;
+	margin-bottom: 10px;
 }
 .section-wrapper{
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-top: 100px;
+	
 }
-p{
+/* p{
 	color: #969595;
-}
+	padding-top: 35;
+
+} */
 .border-radius{
 	border-radius: 0 !important;
 	border-color: #60c9eb;
@@ -143,7 +146,7 @@ ul.nav.navbar-nav.navbar-right{
     background: #e8f9ff;
 }
 		/*Home*/
-.flexslider{
+/* .flexslider{
 	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
@@ -184,7 +187,7 @@ ul.nav.navbar-nav.navbar-right{
 	font-size: 14px;
 	color: #fff;
 	margin: 20px 40px 25px;
-}
+} */
 .custom-btn{
     color: #FFF;
     background-color: transparent;
@@ -198,6 +201,10 @@ ul.nav.navbar-nav.navbar-right{
 .custom-btn:hover{
 	background: #fff;
 	color: #583b54;
+}
+button {
+	background-color: #60c9eb;
+	color: #e8f9ff;
 }
 /*=================================================
 ||				4. Find a Tour
@@ -548,7 +555,7 @@ footer a:hover, footer a:focus{
   }
   
   .fixed-background {
-	padding: 5rem 0;
+	padding: 20rem 0;
   }
 
   

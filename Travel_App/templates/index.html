@@ -6,13 +6,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
 	<title>Travel Guide</title>
-	<link rel="shortcut icon" href="img/favicon.ico">
-	<!-- Bootstrap 4.5 CSS -->
+	
+	<!-- Bootstrap v3.3.2 CSS -->
 	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/static/css/ionicons.min.css">
-	<link rel="stylesheet" href="/static/css/owl.carousel.css">
-	<link rel="stylesheet" href="/static/css/owl.theme.css">
-	<link rel="stylesheet" href="/static/css/flexslider.css" type="text/css">
+
 	<!-- Style CSS -->
     <link rel="stylesheet" href="/static/css/main.css">
 </head>
@@ -43,84 +41,60 @@
 	</nav>
 
 <!-- Home -->
-		<div id="header">
-		    <div class="flexslider">
-		        <ul class="slides">
-		            <li class="slider-item" style="background-image: url('/static/images/item-1.png')">
-		                <div class="intro container">
-		                    <div class="inner-intro">
-		                        <h1 class="header-title">
-		                            <span>traveling</span> always "good idea"
-		                        </h1>
-		                        <p class="header-sub-title">
-		                            it leaves you speecless, then turns your into a storyteller.
-		                        </p>
-		                    </div>
-		                </div>
-		            </li> <!-- /.slider-item -->
-		            <li class="slider-item" style="background-image: url('/static/images/item-2.png')">
-		                <div class="intro">
-		                    <div class="inner-intro">
-		                        <h1 class="header-title">
-		                            to <span>travel</span> is to <span>live</span>
-		                        </h1>
-		                        <p class="header-sub-title">
-		                            it leaves you speecless, then turns your into a storyteller.
-		                        </p>
-		                    </div>
-		                </div>
-		            </li> <!-- /.slider-item -->
-		        </ul> <!-- /.slides -->
-		    </div> <!-- /.flexslider -->
-		</div> <!-- /#header -->
+	 <div id="header">
+		</div>
+		
 <!-- Find a Tour -->
 	<section class="tour section-wrapper container">
-		<h2 class="section-title">
-			Find a Tour
-		</h2>
-		<p class="section-subtitle">
-			Where would you like to go?
-
-		
+		<h1 class="section-title">
+			Find the best City for your Trip!
+		</h1>
+		<h4 class="section-subtitle">
+			Based on the weather, this tool will predict the best place for you to go. Fill out the fields below and see it!
+		</h4>
+		<p>
+			<br>
 		</p>
-
 		<form method="POST">
 		<div class="col-md-3 col-sm-6">
 			<div class="input-group">
-				<input type="text" class="form-control border-radius border-right" placeholder="temp_max"  input name="temp_max">/>
-				<span class="input-group-addon border-radius custom-addon">
+				<label for="temp_max" style="color: gray" >Enter Max Temperature (°C)</label>
+				<input type="text" class="form-control border-radius border-right" placeholder="30" name="temp_max"/>
 					<i class="weather"></i>
 				</span>
 			</div>
 		</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="input-group">
-					<input type="text" class="form-control border-radius border-right" placeholder="temp_min" name="temp_min"/>
-					<span class="input-group-addon border-radius custom-addon">
-						<i class="weather"></i>
+		<div class="col-md-3 col-sm-6">
+			<div class="input-group">
+				<label for="temp_min" style="color:gray" >Enter Min Temperature (°C)</label>
+				<input type="text" class="form-control border-radius border-right" placeholder="temp_min" name="temp_min"/>
+					<i class="weather"></i>
 					</span>
-				</div>
 			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="input-group">
-					<input type="text" class="form-control border-radius border-right" placeholder="humidity" name="humidity"/>
-					<span class="input-group-addon border-radius custom-addon">
-						<i class="Humidity"></i>
-					</span>
-				</div>
-			</div>
-			
-			<div class="col-md-3 col-sm-6">
-				<div class="btn btn-default border-radius custom-button">
-					<button id="search_btn">Find the city</button>
-					<p id="demo">{{result}}</p>
-					
-				</div>
-			</div>
-		</form>	
 		</div>
+		<div class="col-md-3 col-sm-6">
+			<div class="input-group">
+				<label for="humidity" style="color:gray" >Enter Humidity (%)</label>
+				<input type="text" class="form-control border-radius border-right" placeholder="humidity" name="humidity"/>
+					<i class="Humidity"></i>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6">
+			<h7 style="color: white;">.
+			</h7>
+			<div class="btn btn-default border-radius custom-button">
+				<button style="background-color:  #60c9eb ; font-size: larger; border-style: none;" id="search_btn">Find the city</button>					
+			</div>
+		</div>
+		</form>	
 	</section> <!-- /.tour -->
-
+	<div class="col-md-12">
+		<h2 style="background-color: black; ;" id="demo"><center>
+			<br>
+			{{result}}
+			<br>
+		</center></h2>
+	</div>
 <!-- Start Fixed Background IMG -->
 <div class="fixed-background">
 
@@ -157,6 +131,7 @@
 		</div>
 		<div class="col-md-3 col-sm-6">
 			<div class="input-group">
+
 				<input type="text" class="form-control border-radius border-right" placeholder="Rating"/>
 				<span class="input-group-addon border-radius custom-addon">
 					<i class="price"></i>
@@ -395,16 +370,16 @@ data-interval="6500">
 	</footer>
 
 
-	<script src="assets/js/jquery-1.11.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- <script src="assets/js/owl.carousel.min.js"></script> -->
-    <script src="assets/js/contact.js"></script>
-    <!-- <script src="assets/js/jquery.flexslider.js"></script> -->
-	<script src="assets/js/script.js"></script>
-	<script src="../app_test.js"></script>
+	<script src="static/js/jquery-1.11.2.min.js"></script> 
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/contact.js"></script> 
+    <script src="assets/js/jquery.flexslider.js"></script>
+	<script src="assets/js/script.js"></script> 
+	<script src="../app_test.js"></script> 
 
 
-
+	
 
 
 
