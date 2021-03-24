@@ -50,8 +50,12 @@ body
 }
 .section-wrapper{
 	padding-top: 100px;
-	
 }
+.section-wrapper-2 {
+	padding-top: 40px;
+}
+
+
 /* p{
 	color: #969595;
 	padding-top: 35;
@@ -201,10 +205,6 @@ ul.nav.navbar-nav.navbar-right{
 .custom-btn:hover{
 	background: #fff;
 	color: #583b54;
-}
-button {
-	background-color: #60c9eb;
-	color: #e8f9ff;
 }
 /*=================================================
 ||				4. Find a Tour

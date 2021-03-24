@@ -41,13 +41,13 @@
 	</nav>
 
 <!-- Home -->
-	 <div id="header">
-		</div>
+	<div id="header">
+	</div>
 		
 <!-- Find a Tour -->
 	<section class="tour section-wrapper container">
 		<h1 class="section-title">
-			Find the best City for your Trip!
+			Find the best City for your Trip
 		</h1>
 		<h4 class="section-subtitle">
 			Based on the weather, this tool will predict the best place for you to go. Fill out the fields below and see it!
@@ -56,38 +56,42 @@
 			<br>
 		</p>
 		<form method="POST">
-		<div class="col-md-3 col-sm-6">
-			<div class="input-group">
-				<label for="temp_max" style="color: gray" >Enter Max Temperature (°C)</label>
-				<input type="text" class="form-control border-radius border-right" placeholder="30" name="temp_max"/>
-					<i class="weather"></i>
-				</span>
-			</div>
-		</div>
-		<div class="col-md-3 col-sm-6">
-			<div class="input-group">
-				<label for="temp_min" style="color:gray" >Enter Min Temperature (°C)</label>
-				<input type="text" class="form-control border-radius border-right" placeholder="temp_min" name="temp_min"/>
-					<i class="weather"></i>
+			<div class="col-md-3 col-sm-6">
+				<div class="input-group">
+					<label for="temp_max" style="color: gray" >Enter Max Temperature (°C)</label>
+					<input type="text" class="form-control border-radius border" placeholder="30" name="temp_max"/>
+						<i class="weather"></i>
 					</span>
+				</div>
 			</div>
-		</div>
-		<div class="col-md-3 col-sm-6">
-			<div class="input-group">
-				<label for="humidity" style="color:gray" >Enter Humidity (%)</label>
-				<input type="text" class="form-control border-radius border-right" placeholder="humidity" name="humidity"/>
-					<i class="Humidity"></i>
+			<div class="col-md-3 col-sm-6">
+				<div class="input-group">
+					<label for="temp_min" style="color:gray" >Enter Min Temperature (°C)</label>
+					<input type="text" class="form-control border-radius border" placeholder="-5" name="temp_min"/>
+						<i class="weather"></i>
+						</span>
+				</div>
 			</div>
-		</div>
-		<div class="col-md-3 col-sm-6">
-			<h7 style="color: white;">.
-			</h7>
-			<div class="btn btn-default border-radius custom-button">
-				<button style="background-color:  #60c9eb ; font-size: larger; border-style: none;" id="search_btn">Find the city</button>					
+			<div class="col-md-3 col-sm-6">
+				<div class="input-group">
+					<label for="humidity" style="color:gray">Enter Humidity (%)</label>
+					<input type="text" class="form-control border-radius border" placeholder="25" name="humidity"/>
+						<i class="Humidity"></i>
+				</div>
 			</div>
-		</div>
+			<div class="col-md-3 col-sm-6">
+				
+				<div class="input-group">
+					<label for="humidity" style="color:white" >.....................</label>
+				<div class="btn btn-default border-radius custom-button">
+					<button style="background-color:  #60c9eb ; font-size: larger; border-style: none;" id="search_btn">Find the city</button>					
+				</div>
+				</div>
+			</div>
 		</form>	
-	</section> <!-- /.tour -->
+	</section> 
+
+<!-- City Prediction -->
 	<div class="col-md-12">
 		<h2 style="background-color: black; ;" id="demo"><center>
 			<br>
@@ -95,6 +99,7 @@
 			<br>
 		</center></h2>
 	</div>
+
 <!-- Start Fixed Background IMG -->
 <div class="fixed-background">
 
@@ -106,45 +111,53 @@
 </div>
 
 <!-- Find a Tour -->
-<section class="tour section-wrapper container">
-	<h2 class="section-title">
-		Find a Tour
-	</h2>
-	<p class="section-subtitle">
-		Where would you like to go?
+<section class="tour section-wrapper-2 container">
+	<h1 class="section-title">
+		Find a great Airbnb for your Trip
+	</h1>
+	<h4 class="section-subtitle">
+		Fill out the fields below and see it!
+	</h4>
+	<p>
+		<br>
 	</p>
-	<div class="col-md-3 col-sm-6">
-		<div class="input-group">
-			<input type="text" class="form-control border-radius border-right" placeholder="Minimum Price"/>
-			<span class="input-group-addon border-radius custom-addon">
-				<i class="price"></i>
-			</span>
-		</div>
-	</div>
+	<form method="POST">
 		<div class="col-md-3 col-sm-6">
 			<div class="input-group">
-				<input type="text" class="form-control border-radius border-right" placeholder="Maximum Price"/>
-				<span class="input-group-addon border-radius custom-addon">
-					<i class="price"></i>
+				<label for="temp_max" style="color: gray" >Minimum Room Price</label>
+				<input type="text" class="form-control border-radius border" placeholder="30" name="min_price"/>
+					<i class="weather"></i>
 				</span>
 			</div>
 		</div>
 		<div class="col-md-3 col-sm-6">
 			<div class="input-group">
-
-				<input type="text" class="form-control border-radius border-right" placeholder="Rating"/>
-				<span class="input-group-addon border-radius custom-addon">
-					<i class="price"></i>
-				</span>
+				<label for="temp_min" style="color:gray" >Maximum Room Price</label>
+				<input type="text" class="form-control border-radius border" placeholder="130" name="max_price"/>
+					<i class="weather"></i>
+					</span>
 			</div>
 		</div>
 		<div class="col-md-3 col-sm-6">
+			<div class="input-group">
+				<label for="humidity" style="color:gray">Host Rating (5-10)</label>
+				<input type="text" class="form-control border-radius border" placeholder="5" name="rating"/>
+					<i class="Humidity"></i>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6">
+			
+			<div class="input-group">
+				<label for="humidity" style="color:white" >.....................</label>
 			<div class="btn btn-default border-radius custom-button">
-				Find Airbnb
+				<button style="background-color:  #60c9eb ; font-size: larger; border-style: none;" id="search_btn">Find the city</button>					
+			</div>
 			</div>
 		</div>
-	</div>
-</section> <!-- /.tour -->
+	</form>	
+</section>
+
+
 <!-- Our Blazzing offers -->
 	<section class="offer section-wrapper">
 		<div class="container">
