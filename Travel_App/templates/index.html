@@ -1,32 +1,20 @@
 <!DOCTYPE html>
-<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="en-US"><![endif]-->
-<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="en-US">	<![endif]-->
-<!--[if IE 9]><html class="ie ie9 lte9" lang="en-US"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
 <html class="noIE" lang="en-US">
-<!--<![endif]-->
-	<head>
-		<!-- meta -->
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-			<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+<head>
+	<!-- meta -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
 	<title>Travel Guide</title>
-
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- Bootstrap 4.5 CSS -->
 	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/static/css/ionicons.min.css">
 	<link rel="stylesheet" href="/static/css/owl.carousel.css">
 	<link rel="stylesheet" href="/static/css/owl.theme.css">
 	<link rel="stylesheet" href="/static/css/flexslider.css" type="text/css">
+	<!-- Style CSS -->
     <link rel="stylesheet" href="/static/css/main.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-			<!--[if lt IE 9]>
-				<script src="assets/js/html5shiv.js"></script>
-				<script src="assets/js/respond.js"></script>
-			<![endif]-->
-
-			<!--[if IE 8]>
-		    	<script src="assets/js/selectivizr.js"></script>
-		    <![endif]-->
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -95,7 +83,7 @@
 		</p>
 		<div class="col-md-3 col-sm-6">
 			<div class="input-group">
-				<input type="text" class="form-control border-radius border-right" id="Minimum Weather" placeholder="Minimum Weather"/>
+				<input type="text" class="form-control border-radius border-right" placeholder="Minimum Weather"/>
 				<span class="input-group-addon border-radius custom-addon">
 					<i class="weather"></i>
 				</span>
@@ -135,28 +123,18 @@
 			</div>
 		</div>
 	</section> <!-- /.tour -->
+
 <!-- Start Fixed Background IMG -->
 <div class="fixed-background">
 
 	<div class="row text-light py-5">
-		<div class="col text-center">
-			<h1>Advanced to the next level</h1>
-			
-			<h3 class="py-4"> see what is on the other side</h3>
-			
-			<button type="button" data-toggle="modal" data-target="#modal1"
-					class="btn btn-primary btn-lg mr-2">Blue Pill</button>
-			
-			<button type="button" data-toggle="modal" data-target="#modal1"
-					class="btn btn-danger btn-lg mr-2">Red Pill</button>
-		</div>
 	</div>
 	<div class="fixed-wrap">
 		<div class="fixed"></div>
 	</div>
 </div>
 
-	<!-- Find a Tour -->
+<!-- Find a Tour -->
 <section class="tour section-wrapper container">
 	<h2 class="section-title">
 		Find a Tour
@@ -252,43 +230,27 @@
 
 
 <!-- Top place to visit -->
-	<section class="visit section-wrapper">
-		<div class="container">
-			<h2 class="section-title">
-				Photo gallery
-			</h2>
-			<p class="section-subtitle">
-				Some of the best destinations to offer you
-			</p>
-				<!-- Image Carousel -->
-	<div id="carousel" class="carousel slide" data-ride="carousel"
-	data-interval="6500">
+<section class="visit section-wrapper">
+	<div class="container">
+		<h2 class="section-title">
+			Photo gallery
+		</h2>
+		<p class="section-subtitle">
+			Some of the best destinations to offer you
+		</p>
+			<!-- Image Carousel -->
+<div id="carousel" class="carousel slide" data-ride="carousel"
+data-interval="6500">
 
-	<!-- Carousel Content -->
-	<div class="carousel-inner">
-			
-		<div class="carousel-item active">
-			<img src="/static/images/visit-1.png" alt="visit-1" class="w-100">
-			<img src="/static/images/visit-2.png" alt="visit-2" class="w-100">
-			<img src="/static/images/visit-3.png" alt="visit-3" class="w-100">
-			<div class="carousel-caption">
-				<div class="container"></div>
-		</div> <!-- /.container -->
-	</section> <!-- /.visit -->
-			<!-- Previous & Next Buttons -->
-			<a href="#carousel" class="carousel-control-prev" role="button"
-			data-slide="prev">
-				<span class="fas fa-chevron-left fa-2x"></span>
-			</a>
-	
-			<a href="#carousel" class="carousel-control-next" role="button"
-			data-slide="next">
-				<span class="fas fa-chevron-right fa-2x"></span>
-			</a>
-			<!-- End Previous & Next Buttons -->
-	
-		</div>
-		<!-- End Image Carousel -->
+<!-- Carousel Content -->
+<div class="carousel-inner">
+		
+	<div class="carousel-item active">
+		<img src="/static/images/visit-1.png" alt="visit-1" class="w-100">
+		<img src="/static/images/visit-2.png" alt="visit-2" class="w-100">
+		<img src="/static/images/visit-3.png" alt="visit-3" class="w-100">
+	</div> <!-- /.container -->
+</section> <!-- /.visit -->
 
 	<!-- Additional-services -->
 	<section class="additional-services section-wrapper">
@@ -436,11 +398,11 @@
 	</footer>
 
 
-	<script src="../js/jquery-1.11.2.min.js"></script>
-    <script src="../static/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/owl.carousel.min.js"></script> -->
     <script src="assets/js/contact.js"></script>
-    <script src="assets/js/jquery.flexslider.js"></script>
+    <!-- <script src="assets/js/jquery.flexslider.js"></script> -->
 	<script src="assets/js/script.js"></script>
 	<script src="../app_test.js"></script>
 
