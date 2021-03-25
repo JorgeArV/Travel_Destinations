@@ -42,7 +42,6 @@ def my_form_post():
        temp_max = request.form.get("temp_max")
        temp_min = request.form.get("temp_min")
        humidity = request.form.get("humidity")
-       
        model = pickle.load(open("model.pkl", "rb"))
        prediction = model.predict([[temp_max, temp_min, humidity]])
        print(prediction)
@@ -52,6 +51,22 @@ def my_form_post():
       
     return render_template("index.html", result=result)
 
+@app.route('/v2', methods=['POST', 'GET'])
+def my_form_post2():
+
+
+    if request.method == "POST":
+       price = request.form.get("min_price")
+       rating = request.form.get("rating")
+
+       model2 = pickle.load(open("model2.pkl", "rb"))
+       prediction2 = model2.predict([[price, rating]])
+       print(prediction2)
+       result2=str(prediction2[0])
+    else:
+        result2='No prediction'
+      
+    return render_template("index.html", result_2=result2)
 
 if __name__ == "__main__":
     app.run()
