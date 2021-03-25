@@ -51,7 +51,7 @@ def my_form_post():
       
     return render_template("index.html", result=result)
 
-@app.route('/v2', methods=['POST', 'GET'])
+@app.route('/airbnb', methods=['POST', 'GET'])
 def my_form_post2():
 
 
