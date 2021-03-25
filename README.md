@@ -21,7 +21,7 @@ Based on this information, we will predict the most suitable location destinatio
 
 ## Datasets:
 <li> Listings: http://insideairbnb.com/get-the-data.html</li>
-<li> Weather: https://openweathermap.org/api</li>
+<li> Weather: https://www.visualcrossing.com/</li>
 
 ## Group Members:
 
@@ -33,7 +33,7 @@ Based on this information, we will predict the most suitable location destinatio
 -	Fatima Mukaddam
 
 ## Visualizations:
-tbd
+![Travel Guid](Travel_App/static/images/web_screenshot.png)
 ## Live webpage
 --
 ### Copyright
